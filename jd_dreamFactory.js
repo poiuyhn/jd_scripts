@@ -35,10 +35,7 @@ let tuanActiveId = `6S9y4sJUfA2vPQP6TLdVIQ==`;
 const jxOpenUrl = `openjd://virtual?params=%7B%20%22category%22:%20%22jump%22,%20%22des%22:%20%22m%22,%20%22url%22:%20%22https://wqsd.jd.com/pingou/dream_factory/index.html%22%20%7D`;
 let cookiesArr = [], cookie = '', message = '';
 const inviteCodes = [
-  'T0225KkcRBsQpADTdEmgk6EMdACjVWnYaS5kRrbA',
-  'T0205KkcFXRxozeham689a1TCjVWnYaS5kRrbA',
-  "T01046MhBlZetwCjVWnYaS5kRrbA",
-  'T018v_h7Qhwe913RJRKb1ACjVWnYaS5kRrbA'
+  'epeyrkOkUEZfkNfU0q4F-w==',
 ];
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 $.tuanIds = [];
@@ -805,7 +802,7 @@ async function stealFriend() {
   $.friendList = [...new Set($.friendList)];
   for (let i = 0; i < $.friendList.length; i++) {
     let pin = $.friendList[i];//好友的encryptPin
-    if (pin === 'T0225KkcRBsQpADTdEmgk6EMdACjVWnYaS5kRrbA' || pin === 'T0205KkcFXRxozeham689a1TCjVWnYaS5kRrbA' || pin === 'T01046MhBlZetwCjVWnYaS5kRrbA' || pin === 'T018v_h7Qhwe913RJRKb1ACjVWnYaS5kRrbA') {
+    if (pin === 'epeyrkOkUEZfkNfU0q4F-w==' || pin === 'T0205KkcFXRxozeham689a1TCjVWnYaS5kRrbA') {
       continue
     }
     await PickUp(pin, true);
