@@ -802,7 +802,7 @@ async function stealFriend() {
   $.friendList = [...new Set($.friendList)];
   for (let i = 0; i < $.friendList.length; i++) {
     let pin = $.friendList[i];//好友的encryptPin
-    if (pin === 'epeyrkOkUEZfkNfU0q4F-w==' || pin === 'T0205KkcFXRxozeham689a1TCjVWnYaS5kRrbA') {
+    if (pin === 'epeyrkOkUEZfkNfU0q4F-w==' || pin === 'epeyrkOkUEZfkNfU0q4F-w==') {
       continue
     }
     await PickUp(pin, true);
